@@ -1,18 +1,20 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Adding a new task
+task-cli add "Buy groceries"
+# Output: Task added successfully (ID: 1)
 
-## Folder Structure
+# Updating and deleting tasks
+task-cli update 1 "Buy groceries and cook dinner"
+task-cli delete 1
 
-The workspace contains two folders by default, where:
+# Marking a task as in progress or done
+task-cli mark-in-progress 1
+task-cli mark-done 1
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+# Listing all tasks
+task-cli list
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+# Listing tasks by status
+task-cli list done
+task-cli list todo
+task-cli list in-progress
